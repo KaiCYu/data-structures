@@ -79,11 +79,9 @@ define([
       });
 
       it('removes the newest item, after newer items have already been added and removed', function() {
-        // debugger;
         stack.push('a');
         stack.push('b');
         stack.push('c');
-        // debugger;
         stack.pop();
         expect(stack.pop()).to.equal('b');
       });
